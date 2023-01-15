@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "792576540467",
+    "project_id": "fitnerds",
+    "storage_bucket": "fitnerds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792576540467:android:b68b0071413d25d7c24846",
+        "android_client_info": {
+          "package_name": "com.example.fitnerds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792576540467-36nlavcfaas9pca9jrc2oiloromufm2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBozzsJEhhqdTq4KHZOMtRsa5SYeyA0h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792576540467-36nlavcfaas9pca9jrc2oiloromufm2i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "792576540467-knql6dg3jt32rqrhrfoto7kvn8hjsl4i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fitnerds"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792576540467:android:c272930f101367d3c24846",
+        "android_client_info": {
+          "package_name": "com.example.fitness_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792576540467-36nlavcfaas9pca9jrc2oiloromufm2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBozzsJEhhqdTq4KHZOMtRsa5SYeyA0h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792576540467-36nlavcfaas9pca9jrc2oiloromufm2i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "792576540467-knql6dg3jt32rqrhrfoto7kvn8hjsl4i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fitnerds"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
