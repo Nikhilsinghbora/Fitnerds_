@@ -45,18 +45,18 @@ class _About_UsPageState extends State<About_UsPage> {
                   vertical: 50,
                 ),
                 child: Image.asset(
-                  'assets/images/hh.png',
-                  height: 40,
+                  'assets/images/ll.png',
+                  height: 80,
                   color: Colors.red,
                 ),
               ),
-              Text(
-                'Healthify Me',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold),
-              )
+              // Text(
+              //   'Fitnerds',
+              //   style: TextStyle(
+              //       color: Colors.black,
+              //       fontSize: 25,
+              //       fontWeight: FontWeight.bold),
+              // )
             ],
           ),
           Center(
@@ -66,7 +66,7 @@ class _About_UsPageState extends State<About_UsPage> {
           )),
           Center(
               child: Text(
-            'Meet HealthifyMe.',
+            'Meet Fitnerds',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
           )),
           SizedBox(
@@ -74,7 +74,7 @@ class _About_UsPageState extends State<About_UsPage> {
           ),
           Center(
               child: Text(
-            'With the all-new HealthifyMe,kickstart your',
+            'With the all-new Fitnerds,kickstart your',
             style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
           )),
           Center(

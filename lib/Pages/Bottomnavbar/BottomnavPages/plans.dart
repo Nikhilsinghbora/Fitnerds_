@@ -18,7 +18,7 @@ class _Plans_PageState extends State<Plans_Page> {
       backgroundColor: Colors.black12,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         title: Row(
           children: const [
             Text(
@@ -40,7 +40,7 @@ class _Plans_PageState extends State<Plans_Page> {
               size: 30,
             ),
           ),
-          Center(
+          const Center(
             child: Text(
               'NEED HELP ?',
               style:
@@ -49,7 +49,7 @@ class _Plans_PageState extends State<Plans_Page> {
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.more_vert,
               color: Colors.black,
             ),
@@ -61,25 +61,25 @@ class _Plans_PageState extends State<Plans_Page> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 10.0, right: 10, top: 10),
+              const Padding(
+                padding: EdgeInsets.only(left: 10.0, right: 10, top: 10),
                 child: Text('Recommended Plans for ',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 23,
                         fontWeight: FontWeight.bold)),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 10, right: 8),
-                child: Text('Raj',
+              const Padding(
+                padding: EdgeInsets.only(left: 10, right: 8),
+                child: Text('Noob',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 23,
                         fontWeight: FontWeight.bold)),
               ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 10, right: 10, top: 5, bottom: 15),
+              const Padding(
+                padding:
+                    EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 15),
                 child: Text('Based on your fitness goals ',
                     style: TextStyle(
                         color: Colors.black,
@@ -87,7 +87,8 @@ class _Plans_PageState extends State<Plans_Page> {
                         fontWeight: FontWeight.bold)),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 13, horizontal: 10),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 13, horizontal: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
@@ -100,8 +101,8 @@ class _Plans_PageState extends State<Plans_Page> {
                       children: [
                         Container(
                           height: 190,
-                          decoration: BoxDecoration(
-                              borderRadius: const BorderRadius.only(
+                          decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(10),
                                   topRight: Radius.circular(10)),
                               image: DecorationImage(
@@ -125,16 +126,16 @@ class _Plans_PageState extends State<Plans_Page> {
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold),
                               ),
-                              Padding(
-                                padding: EdgeInsets.all(8.0),
-                                child: Text(
-                                  'Starts at ₹ 199 per month',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
+                              // Padding(
+                              //   padding: EdgeInsets.all(8.0),
+                              //   child: Text(
+                              //     'Starts at ₹ 199 per month',
+                              //     style: TextStyle(
+                              //         color: Colors.white,
+                              //         fontSize: 13,
+                              //         fontWeight: FontWeight.bold),
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
@@ -152,7 +153,7 @@ class _Plans_PageState extends State<Plans_Page> {
                       height: 10,
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Column(
                         children: [
                           Row(
@@ -225,12 +226,12 @@ class _Plans_PageState extends State<Plans_Page> {
                       child: Container(
                         height: 50,
                         width: double.infinity,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(10),
                                 bottomRight: Radius.circular(10))),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             'EXPLORE SMART',
                             style: TextStyle(
@@ -245,7 +246,8 @@ class _Plans_PageState extends State<Plans_Page> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 13, horizontal: 10),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 13, horizontal: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
@@ -271,8 +273,8 @@ class _Plans_PageState extends State<Plans_Page> {
                               )),
                         ),
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 5),
-                          margin: EdgeInsets.fromLTRB(15, 50, 10, 0),
+                          padding: const EdgeInsets.symmetric(vertical: 5),
+                          margin: const EdgeInsets.fromLTRB(15, 50, 10, 0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
@@ -283,16 +285,16 @@ class _Plans_PageState extends State<Plans_Page> {
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold),
                               ),
-                              Padding(
-                                padding: EdgeInsets.all(8.0),
-                                child: Text(
-                                  'Starts at ₹ 2,500/m 4,000/m',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
+                              // Padding(
+                              //   padding: EdgeInsets.all(8.0),
+                              //   child: Text(
+                              //     'Starts at ₹ 2,500/m 4,000/m',
+                              //     style: TextStyle(
+                              //         color: Colors.white,
+                              //         fontSize: 13,
+                              //         fontWeight: FontWeight.bold),
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
@@ -311,7 +313,7 @@ class _Plans_PageState extends State<Plans_Page> {
                       height: 10,
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Column(
                         children: [
                           Row(
@@ -371,26 +373,26 @@ class _Plans_PageState extends State<Plans_Page> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Column(
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
+                          const Padding(
+                            padding: EdgeInsets.all(10.0),
                             child: CircleAvatar(
-                              backgroundImage:
-                                  AssetImage('assets/images/prman.jpg'),
+                              backgroundImage: NetworkImage(
+                                  'https://mememandir.com/Resources/mememandir/Article/Images/matmaan2.png'),
                               radius: 30,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
+                          const Padding(
+                            padding: EdgeInsets.symmetric(
                                 horizontal: 10.0, vertical: 5),
                             child: Text(
-                              'Rajneesh',
+                              'Fitnerds Team',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 12,
@@ -403,12 +405,12 @@ class _Plans_PageState extends State<Plans_Page> {
                     Container(
                       height: 50,
                       width: double.infinity,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(10),
                               bottomRight: Radius.circular(10))),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'KNOW MORE',
                           style: TextStyle(
@@ -423,49 +425,27 @@ class _Plans_PageState extends State<Plans_Page> {
               ),
               Center(
                 child: Container(
-                  padding: EdgeInsets.all(8),
-                  margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  padding: const EdgeInsets.all(8),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Text('View other Plans',
+                  child: const Text('View other Plans',
                       style: TextStyle(
                           color: Colors.black54, fontWeight: FontWeight.bold)),
-                ),
-              ),
-              Container(
-                color: Colors.white,
-                child: ListTile(
-                  leading: Image.asset(
-                    'assets/images/coins.png',
-                    height: 50,
-                  ),
-                  title: Text(
-                    'Your Credit Balance',
-                    style: TextStyle(fontSize: 13),
-                  ),
-                  subtitle: Text(
-                    '₹0',
-                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
-                  ),
-                  trailing: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'EARN MORE',
-                        style: TextStyle(color: Colors.red),
-                      )),
                 ),
               ),
             ],
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.green[500],
-        child: const Icon(Icons.message),
-      ), // Th
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   backgroundColor: Colors.green[500],
+      //   child: const Icon(Icons.message),
+      // ),
     );
   }
 }

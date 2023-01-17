@@ -1,4 +1,5 @@
 import 'package:Fitnerds/Pages/Sidebar/sidedrawer.dart';
+import 'package:Fitnerds/Screens/input_page.dart';
 import 'package:Fitnerds/utils/app_color.dart';
 import 'package:Fitnerds/utils/string_utils.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,7 +15,7 @@ class Homepage_Second extends StatefulWidget {
 }
 
 final PageStorageBucket bucket = PageStorageBucket();
-Widget currentScreen = Homepage_Second();
+Widget currentScreen = const Homepage_Second();
 
 class CardItem {
   late final String title;
@@ -53,10 +54,11 @@ class _Homepage_SecondState extends State<Homepage_Second> {
 
   List<CardItem> items = [
     CardItem(
-        title: 'All',
-        color: Colors.black,
-        image_color: Colors.white,
-        iconData: Icons.border_all),
+      title: 'steps',
+      color: Colors.black,
+      image_color: Colors.white,
+      iconData: Icons.run_circle_outlined,
+    ),
     CardItem(
         iconData: Icons.file_copy,
         title: 'Blog',
@@ -73,8 +75,8 @@ class _Homepage_SecondState extends State<Homepage_Second> {
         color: Colors.green,
         image_color: Colors.white),
     CardItem(
-        iconData: Icons.tv,
-        title: 'Healthify Tv',
+        iconData: Icons.man,
+        title: 'Check BMI',
         color: Colors.yellow,
         image_color: Colors.white),
     CardItem(
@@ -221,12 +223,12 @@ class _Homepage_SecondState extends State<Homepage_Second> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: SideBarWidget(),
+      drawer: const SideBarWidget(),
       appBar: AppBar(
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         title: Row(
-          children: [
+          children: const [
             Text(
               'Today',
               style: TextStyle(
@@ -244,13 +246,13 @@ class _Homepage_SecondState extends State<Homepage_Second> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.flash_on,
               color: AppColor.iconyellow,
               size: 30,
             ),
           ),
-          Center(
+          const Center(
             child: Text(
               '0 Days',
               style:
@@ -259,7 +261,7 @@ class _Homepage_SecondState extends State<Homepage_Second> {
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.share),
+            icon: const Icon(Icons.share),
           ),
         ],
       ),
@@ -271,7 +273,7 @@ class _Homepage_SecondState extends State<Homepage_Second> {
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
                 itemCount: 9,
-                separatorBuilder: (context, _) => SizedBox(
+                separatorBuilder: (context, _) => const SizedBox(
                   width: 10,
                 ),
                 itemBuilder: (context, index) => GestureDetector(
@@ -297,7 +299,7 @@ class _Homepage_SecondState extends State<Homepage_Second> {
               child: ListView.separated(
                   itemBuilder: (context, index) =>
                       reusable_post_builder(currentList![index]),
-                  separatorBuilder: (context, _) => SizedBox(
+                  separatorBuilder: (context, _) => const SizedBox(
                         height: 15,
                       ),
                   itemCount: 4),
@@ -314,8 +316,8 @@ class _Homepage_SecondState extends State<Homepage_Second> {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          padding: EdgeInsets.all(5),
+          margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          padding: const EdgeInsets.all(5),
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
@@ -324,34 +326,39 @@ class _Homepage_SecondState extends State<Homepage_Second> {
                   color: Colors.grey.withOpacity(0.3),
                   spreadRadius: 0,
                   blurRadius: 5,
-                  offset: Offset(0, .2),
+                  offset: const Offset(0, .2),
                 ),
               ]),
           child: Container(
             width: 50,
             height: 50,
-            padding: EdgeInsets.all(7),
+            padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(14),
               color: item.color,
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Icon(
-                item.iconData,
-                // fit: BoxFit.cover,
-                size: 25,
-                color: item.image_color,
+              child: InkWell(
+                child: Icon(
+                  item.iconData,
+                  size: 25,
+                  color: item.image_color,
+                ),
+                onTap: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => InputPage()));
+                },
               ),
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 4,
         ),
         Text(
           item.title,
-          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
         ),
       ],
     );
@@ -364,22 +371,23 @@ class _Homepage_SecondState extends State<Homepage_Second> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              margin: EdgeInsets.only(left: 15, right: 15, bottom: 10, top: 20),
+              margin: const EdgeInsets.only(
+                  left: 15, right: 15, bottom: 10, top: 20),
               child: Row(
                 children: [
                   CircleAvatar(
+                    radius: 13,
+                    backgroundColor: item_two.color_two,
                     child: Icon(
                       item_two.iconData_two,
                       size: 17,
                     ),
-                    radius: 13,
-                    backgroundColor: item_two.color_two,
                   ),
                   Container(
-                      margin: EdgeInsets.only(left: 6),
+                      margin: const EdgeInsets.only(left: 6),
                       child: Text(
                         item_two.title_two,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 13, fontWeight: FontWeight.bold),
                       ))
                 ],
@@ -400,12 +408,12 @@ class _Homepage_SecondState extends State<Homepage_Second> {
           ],
         ),
         Container(
-            margin: EdgeInsets.only(left: 10),
+            margin: const EdgeInsets.only(left: 10),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 item_two.heading,
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.black,
                     fontSize: 15,
                     fontWeight: FontWeight.w500),
@@ -438,8 +446,10 @@ class _Homepage_SecondState extends State<Homepage_Second> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => Comments_Page()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => const Comments_Page()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 10.0),
@@ -487,7 +497,7 @@ class _Homepage_SecondState extends State<Homepage_Second> {
             Padding(
               padding: const EdgeInsets.only(left: 18.0, top: 3, bottom: 10),
               child: Text(item_two.likes,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.grey,
                       fontSize: 12,
                       fontWeight: FontWeight.bold)),
@@ -495,7 +505,7 @@ class _Homepage_SecondState extends State<Homepage_Second> {
             Padding(
               padding: const EdgeInsets.only(left: 6.0, top: 3, bottom: 10),
               child: Text(item_two.comment,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.grey,
                       fontSize: 12,
                       fontWeight: FontWeight.bold)),

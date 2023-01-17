@@ -1,7 +1,6 @@
 import 'package:Fitnerds/Pages/Sidebar/SideBarPages/privacy_policy.dart';
 import 'package:Fitnerds/Pages/Sidebar/SideBarPages/termsandconditions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_material_pickers/flutter_material_pickers.dart';
 
 import 'SideBarPages/about_us.dart';
 
@@ -31,11 +30,12 @@ class _SideBarWidgetState extends State<SideBarWidget> {
                   child: const ListTile(
                     leading: CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage('assets/images/prman.jpg'),
+                      backgroundImage: NetworkImage(
+                          'https://mememandir.com/Resources/mememandir/Article/Images/matmaan2.png'),
                     ),
                     trailing: Icon(Icons.keyboard_arrow_down_outlined),
-                    title: Text('Raj Kumar'),
-                    subtitle: Text('rajkumar@gmail.com'),
+                    title: Text('Noob'),
+                    subtitle: Text('phoolchand@xyz.com'),
                   ),
                 ),
               ),

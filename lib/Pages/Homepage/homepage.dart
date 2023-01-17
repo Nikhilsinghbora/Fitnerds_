@@ -32,8 +32,8 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/hh.png',
-                          height: 40,
+                          'assets/images/ll.png',
+                          height: 80,
                           fit: BoxFit.fitWidth,
                           color: Colors.white,
                         ),

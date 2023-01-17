@@ -38,18 +38,18 @@ class _Terms_and_ConditionsState extends State<Terms_and_Conditions> {
                     vertical: 50,
                   ),
                   child: Image.asset(
-                    'assets/images/hh.png',
-                    height: 40,
+                    'assets/images/ll.png',
+                    height: 80,
                     color: Colors.red,
                   ),
                 ),
-                Text(
-                  'Healthify Me',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )
+                // Text(
+                //   'Fitnerds',
+                //   style: TextStyle(
+                //       color: Colors.black,
+                //       fontSize: 25,
+                //       fontWeight: FontWeight.bold),
+                // )
               ],
             ),
             Center(

@@ -58,12 +58,16 @@ dependencies:
   profile: ^0.0.1
   firebase_core: ^2.4.1
   animated_theme_switcher: ^2.0.7
- 
+  theme_provider: ^0.5.0
+  health: ^4.4.0
+  permission_handler: ^10.2.0
+  font_awesome_flutter: ^10.3.0
+  # flutter_google_fit: ^0.3.1s
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  # flutter_launcher_icons: "^0.11.0"
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -73,7 +77,6 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   freezed: ^0.14.1+2
   json_serializable: ^4.1.0
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -123,7 +126,7 @@ flutter:
      - assets/images/tea.png
      - assets/images/greens.jpg
      - assets/images/ask.jpg
-
+     - assets/images/ll.png
 
 
 

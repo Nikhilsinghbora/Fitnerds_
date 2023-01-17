@@ -29,7 +29,7 @@ class Options_Screen extends StatelessWidget {
                           padding: EdgeInsets.only(left: 8.0),
                           child: Text('Lotu bhai',
                               style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.blue,
                                   fontWeight: FontWeight.bold)),
                         ),
                         const SizedBox(width: 10),

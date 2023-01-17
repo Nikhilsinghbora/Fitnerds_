@@ -86,13 +86,13 @@ class _Workout_PlanState extends State<Workout_Plan> {
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(
-                                'Starts at ₹ 199 per month',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold),
-                              ),
+                              // Text(
+                              //   'Starts at ₹ 199 per month',
+                              //   style: TextStyle(
+                              //       color: Colors.white,
+                              //       fontSize: 13,
+                              //       fontWeight: FontWeight.bold),
+                              // ),
                             ],
                           ),
                         ),
